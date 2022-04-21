@@ -4,8 +4,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   test: {
+    setupFiles: 'vitest.setup.ts',
     globals: true,
-    environment: 'node',
+    environment: 'happy-dom',
     coverage: {
       reporter: ['text', 'json', 'html'],
       all: true,
