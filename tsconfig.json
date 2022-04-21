@@ -1,5 +1,8 @@
 {
-  "include": ["src", "index.ts", "tests", "vitest.setup.ts"],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src", "index.ts", "tests", "vitest.setup.ts", "e2e"],
   "references": [
     {
       "path": "tsconfig.node.json"
