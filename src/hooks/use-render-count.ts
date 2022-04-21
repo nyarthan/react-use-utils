@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import useRerender from './use-rerender';
 
-type ReturnValue = [number, { reset(): void }];
+type ReturnValue = [number, { reset(to?: number): void }];
 
 const useRenderCount = (initialValue?: number): ReturnValue => {
   const initialRenderCount = initialValue ?? 1;
