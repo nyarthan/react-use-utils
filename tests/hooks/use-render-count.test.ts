@@ -41,4 +41,12 @@ describe('useRenderCount', () => {
     result.current[1].reset();
     expect(result.current[0]).toBe(INITIAL_COUNT);
   });
+
+  it('resets count to specified value', () => {
+    const RESET_TO = 10;
+    const { result, rerender } = renderHook(useRenderCount);
+    rerender();
+    result.current[1].reset(RESET_TO);
+    expect(result.current[0]).toBe(RESET_TO);
+  });
 });
