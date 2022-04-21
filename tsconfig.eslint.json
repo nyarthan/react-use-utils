@@ -1,4 +1,12 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src", "index.ts", ".pretierrc.cjs", ".eslintrc.cjs"]
+  "include": [
+    "src",
+    "index.ts",
+    ".pretierrc.cjs",
+    ".eslintrc.cjs",
+    "tests",
+    "vite.config.ts",
+    "vitest.setup.ts"
+  ]
 }
