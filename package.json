@@ -2,23 +2,31 @@
   "name": "react-use-utils",
   "version": "1.0.0",
   "description": "A small general purpose library containing utility hooks / functions.",
+  "author": "Jannis Morgenstern <jannis.n.morgenstern@gmail.com> (https://github.com/Jannis-Morgenstern)",
+  "homepage": "https://github.com/Jannis-Morgenstern/react-use-utils#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jannis-Morgenstern/react-use-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jannis-Morgenstern/react-use-utils/issues"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "util",
+    "hooks"
+  ],
   "main": "index.ts",
   "scripts": {
     "example": "cd example && pnpm dev",
     "test": "vitest",
     "test:coverage": "vitest run --coverage"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jannis-Morgenstern/react-use-utils.git"
+  "dependencies": {
+    "react": "^18.0.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jannis-Morgenstern/react-use-utils/issues"
-  },
-  "homepage": "https://github.com/Jannis-Morgenstern/react-use-utils#readme",
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
@@ -35,8 +43,5 @@
     "typescript": "^4.6.3",
     "vite": "^2.9.5",
     "vitest": "^0.8.2"
-  },
-  "dependencies": {
-    "react": "^18.0.0"
   }
 }
