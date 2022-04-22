@@ -38,10 +38,9 @@ jobs:
         run: |
           ls -la coverage
 
-      - uses: actions/checkout@master
       - uses: codecov/codecov-action@v2
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+          # token: ${{ secrets.CODECOV_TOKEN }}
           flags: unittests
           fail_ci_if_error: true
           verbose: true
