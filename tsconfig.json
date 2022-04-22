@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "lib": ["ESNext", "DOM"]
   },
   "include": ["src", "index.ts", "tests", "vitest.setup.ts"],
   "references": [
