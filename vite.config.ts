@@ -8,7 +8,7 @@ export default defineConfig({
     globals: true,
     environment: 'happy-dom',
     coverage: {
-      reporter: ['json'],
+      reporter: ['json', 'text', 'html'],
       include: ['src/**/*'],
     },
     include: ['tests/**/*'],
