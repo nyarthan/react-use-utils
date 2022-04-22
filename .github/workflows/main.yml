@@ -77,3 +77,4 @@ jobs:
           flags: e2etests
           fail_ci_if_error: true
           verbose: true
+          directory: ./.nyc_output/
