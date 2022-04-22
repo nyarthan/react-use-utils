@@ -64,6 +64,10 @@ jobs:
           version: 6.32.2
           run_install: true
 
+      - name: Setup Playwright
+        run: |
+          npx playwright install
+
       - name: Test E2E
         run: |
           pnpm test:e2e
