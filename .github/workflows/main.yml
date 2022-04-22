@@ -72,8 +72,8 @@ jobs:
         run: |
           pnpm test:e2e
 
-      # - uses: codecov/codecov-action@v2
-      #   with:
-      #     flags: unittests
-      #     fail_ci_if_error: true
-      #     verbose: true
+      - uses: codecov/codecov-action@v2
+        with:
+          flags: e2etests
+          fail_ci_if_error: true
+          verbose: true
