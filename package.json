@@ -1,7 +1,7 @@
 {
   "name": "react-use-utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "A small general purpose library containing utility hooks / functions.",
   "main": "index.ts",
   "scripts": {
     "example": "cd example && pnpm dev",
