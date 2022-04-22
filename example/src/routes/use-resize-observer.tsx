@@ -1,4 +1,4 @@
-import { useResizeObserver } from 'react-use-utils';
+import { useResizeObserver } from 'react-use-utils/coverage';
 
 const UseResizeObserverRoute = () => {
   const [ref, dimensions] = useResizeObserver<HTMLTextAreaElement>();

@@ -19,8 +19,14 @@
     "hooks"
   ],
   "main": "index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./coverage": "./dist/react-use-utils.es.js"
+  },
+  "types": "index.ts",
   "scripts": {
     "example": "cd example && pnpm dev",
+    "build:cov": "COVERAGE_TRANSFORM=true vite build",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "test:e2e": "playwright test"
@@ -34,6 +40,7 @@
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "@vitejs/plugin-react": "^1.3.1",
+    "babel-plugin-istanbul": "^6.1.1",
     "c8": "^7.11.2",
     "eslint": "^8.13.0",
     "happy-dom": "^2.55.0",
