@@ -22,6 +22,7 @@ export default defineConfig({
   },
   build: {
     minify: false,
+    outDir: 'coverage-build/dist',
     lib: {
       entry: path.resolve(__dirname, 'index.ts'),
       name: 'lib',

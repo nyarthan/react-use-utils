@@ -19,10 +19,6 @@
     "hooks"
   ],
   "main": "index.ts",
-  "exports": {
-    ".": "./index.ts",
-    "./coverage": "./dist/react-use-utils.es.js"
-  },
   "types": "index.ts",
   "scripts": {
     "example": "cd example && pnpm dev",

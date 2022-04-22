@@ -3,7 +3,7 @@
     "allowSyntheticDefaultImports": true,
     "lib": ["ESNext", "DOM"]
   },
-  "include": ["src", "index.ts", "tests", "vitest.setup.ts"],
+  "include": ["src", "index.ts", "tests", "vitest.setup.ts", "dist"],
   "references": [
     {
       "path": "tsconfig.node.json"

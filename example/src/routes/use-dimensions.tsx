@@ -1,4 +1,4 @@
-import { useDimensions } from 'react-use-utils/coverage';
+import { useDimensions } from 'react-use-utils-coverage';
 
 const UseDimensionsRoute = () => {
   const [ref, dimensions, { reMeasure }] = useDimensions<HTMLTextAreaElement>();
