@@ -1,4 +1,4 @@
-import { renderHook } from '@testing-library/react';
+import { act, renderHook } from '@testing-library/react';
 import useRenderCount from '../../src/hooks/use-render-count';
 
 describe('useRenderCount', () => {
@@ -28,7 +28,7 @@ describe('useRenderCount', () => {
     const INITIAL_COUNT = 1;
     const { result, rerender } = renderHook(useRenderCount);
     rerender();
-    result.current[1].reset();
+    act(() => result.current[1].reset());
     expect(result.current[0]).toBe(INITIAL_COUNT);
   });
 
@@ -38,7 +38,7 @@ describe('useRenderCount', () => {
       useRenderCount(INITIAL_COUNT),
     );
     rerender();
-    result.current[1].reset();
+    act(() => result.current[1].reset());
     expect(result.current[0]).toBe(INITIAL_COUNT);
   });
 
@@ -46,7 +46,7 @@ describe('useRenderCount', () => {
     const RESET_TO = 10;
     const { result, rerender } = renderHook(useRenderCount);
     rerender();
-    result.current[1].reset(RESET_TO);
+    act(() => result.current[1].reset(RESET_TO));
     expect(result.current[0]).toBe(RESET_TO);
   });
 });
