@@ -1,4 +1,4 @@
-import useDimensions from '../../../src/hooks/use-dimensions';
+import { useDimensions } from 'react-use-utils';
 
 const UseDimensionsRoute = () => {
   const [ref, dimensions, { reMeasure }] = useDimensions<HTMLTextAreaElement>();
