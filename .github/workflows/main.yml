@@ -33,3 +33,11 @@ jobs:
       - name: Test Coverage
         run: |
           pnpm test:coverage
+
+      - uses: actions/checkout@master
+      - uses: codecov/codecov-action@v2
+        with:
+          files: ./coverage/coverage-final.json
+          flags: unittests
+          fail_ci_if_error: true
+          verbose: true
